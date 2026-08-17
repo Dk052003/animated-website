@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Portfolio</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-slate-950 text-white">
+
+    <!--Navbar-->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-slate-950/70 backdrop-blur-lg border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <h1 class="text-2xl font-bold text-purple-400">
+                Daksh<span class="text-white">.</span>
+            </h1>
+
+            <div class="hidden md:flex gap-8 text-gray-300">
+                <a href="#" class="hover:text-purple-400 transition">Home</a>
+                <a href="#" class="hover:text-purple-400 transition">About</a>
+                <a href="#" class="hover:text-purple-400 transition">Projects</a>
+                <a href="#" class="hover:text-purple-400 transition">Contact</a>
+            </div>
+
+            <button class="px-5 py-2 rounded-full bg-purple-600 hover:bg-purple-500 transition duration-300">
+                Let's Talk
+            </button>
+        </div>
+    </nav>
+
+    <!--Hero Section-->
+    <section class="min-h-screen flex items-center justify-center relative overflow-hidden px-6 pt-24">
+        <!--Animated Background-->
+        <div class="absolute w-72 h-72 bg-purple-600/30 rounded-full blur-3xl top-20 left-20 animate-pulse"></div>
+        <div class="absolute w-80 h-80 bg-blue-600/20 rounded-full blur-3xl bottom-0 right-0 animate-pulse"></div>
+
+        <!--Hero Content-->
+        <div class="relative z-10 text-center max-w-4xl">
+            <p class="text-purple-400 text-lg mb-4">
+                Hello, I'm
+            </p>
+
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight">
+                Daksh
+                <span class="text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-pink-500">
+                    Khorwal
+                </span>
+            </h1>
+
+            <h2 class="text-2xl md:text-3xl text-gray-300 mt-6">
+                <span id="typing-text"></span>
+            </h2>
+
+            <p class="text-gray-400 max-w-2xl mx-auto mt-6 text-lg">
+                I create modern, responsive and interactive websites using HTML, CSS, JavaScript and Tailwind CSS.
+            </p>
+
+            <!--Button-->
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mt-10">
+                <a href="#projects" class="px-8 py-3 rounded-full border border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white transition duration-300">
+                    View Projects
+                </a>
+
+                <a href="#contact" class="px-8 py-3 rounded-full border border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white transition duration-300">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!--About Section-->
+    <section id="about" class="py-24 px-6 bg-slate-900 reveal">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-14">
+                <p class="text-purple-400 font-semibold">ABOUT ME</p>
+                <h2 class="text-4xl md:text-5xl font-bold mt-3">
+                    Turning Ideas Into
+                    <span class="text-purple-400">Websites</span>
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold mb-5">Who am I?</h3>
+                    <p class="text-gray-400 leading-8">
+                        I'm Daksh, a passionate Web Developer who enjoys creating modern, responsive and interactive websites. I love combining clean design with smooth animations to create better user experiences.
+                    </p>
+                    <p class="text-gray-400 leading-8 mt-5">
+                        My goal is to build websites that are not only beautiful but also fast, responsive and easy to use.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-5">
+                    <div class="p-6 rounded-2xl bg-slate-800 border border-white/10 hover:border-purple-500 hover:-translate-y-2 transition duration-300">
+                        <div class="text-3xl mb-3">🌐</div>
+                        <h3 class="font-bold text-xl">HTML</h3>
+                        <p class="text-gray-400 mt-2">Semantic & Modern</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-slate-800 border border-white/10 hover:border-purple-500 hover:-translate-y-2 transition duration-300">
+                        <div class="text-3xl mb-3">🎨</div>
+                        <h3 class="font-bold text-xl">CSS</h3>
+                        <p class="text-gray-400 mt-2">Beautiful Layouts</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-slate-800 border border-white/10 hover:border-purple-500 hover:-translate-y-2 transition duration-300">
+                        <div class="text-3xl mb-3">⚡</div>
+                        <h3 class="font-bold text-xl">JavaScript</h3>
+                        <p class="text-gray-400 mt-2">Interactive UI</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-slate-800 border border-white/10 hover:border-purple-500 hover:-translate-y-2 transition duration-300">
+                        <div class="text-3xl mb-3">💨</div>
+                        <h3 class="font-bold text-xl">Tailwind CSS</h3>
+                        <p class="text-gray-400 mt-2">Modern Styling</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Projects Section-->
+    <section id="projects" class="py-24 px-6 bg-slate-950 reveal">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-14">
+                <p class="text-purple-400 font-semibold">MY WORK</p>
+                <h2 class="text-4xl md:text-5xl font-bold mt-3">
+                    Featured
+                    <span class="text-purple-400">Projects</span>
+                </h2>
+                <p class="text-gray-400 mt-5 max-w-2xl mx-auto">
+                    Some projects I've created while learning and improving my web development skills.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="group rounded-2xl overflow-hidden bg-slate-900 border border-white/10 hover:border-purple-500 hover:-translate-y-3 transition-all duration-500">
+                    <div class="h-48 bg-linear-to-br from-purple-600 to-blue-600 flex items-center justify-center">
+                        <span class="text-6xl group-hover:scale-125 transition duration-500">✈️</span>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-purple-400 text-sm">HTML + CSS + JavaScript</p>
+                        <h3 class="text-2xl font-bold mt-2">Travel Booking</h3>
+                        <p class="text-gray-400 mt-3">
+                            A modern travel booking interface with an interactive and responsive design.
+                        </p>
+                        <button class="mt-6 text-purple-400 hover:text-purple-300 font-semibold">
+                            View Project →
+                        </button>
+                    </div>
+                </div>
+
+                <div class="group rounded-2xl overflow-hidden bg-slate-900 border border-white/10 hover:border-pink-500 hover:-translate-y-3 transition-all duration-500">
+                    <div class="h-48 bg-linear-to-br from-pink-600 to-purple-600 flex items-center justify-center">
+                        <span class="text-6xl group-hover:scale-125 transition duration-500">💻</span>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-pink-400 text-sm">HTML + CSS + Tailwind</p>
+                        <h3 class="text-2xl font-bold mt-2">Developer Portfolio</h3>
+                        <p class="text-gray-400 mt-3">
+                            A responsive developer portfolio showing skills, projects and experience.
+                        </p>
+                        <button class="mt-6 text-pink-400 hover:text-pink-300 font-semibold">
+                            View Project →
+                        </button>
+                    </div>
+                </div>
+
+                <div class="group rounded-2xl overflow-hidden bg-slate-900 border border-white/10 hover:border-blue-500 hover:-translate-y-3 transition-all duration-500">
+                    <div class="h-48 bg-linear-to-br from-blue-600 to-cyan-500 flex items-center justify-center">
+                        <span class="text-6xl group-hover:scale-125 transition duration-500">🌦️</span>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-blue-400 text-sm">JavaScript + API</p>
+                        <h3 class="text-2xl font-bold mt-2">Weather App</h3>
+                        <p class="text-gray-400 mt-3">
+                            A clean weather application displaying real-time weather information.
+                        </p>
+                        <button class="mt-6 text-blue-400 hover:text-blue-300 font-semibold">
+                            View Project →
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Section-->
+    <section id="contact" class="py-24 px-6 bg-slate-950 reveal">
+        <div class="max-w-5xl mx-auto text-center">
+            <p class="text-purple-400 font-bold mt-3">
+                GET IN TOUCH
+            </p>
+            <h2 class="text-4xl md:text-5xl font-bold mt-3">
+                Let's <span class="text-purple-400">Talk</span>
+            </h2>
+            <p class="text-gray-400 mt-5 max-w-2xl mx-auto">
+                Have a project idea or want to work together?
+                Feel free to send me a message.
+            </p>
+            
+            <!--Contact Form-->
+            <form id="contact-form" class="max-w-2xl mx-auto mt-12 space-y-5 text-left">
+                <div>
+                    <label class="block mb-2 text-gray-300">
+                        Your Name
+                    </label>
+                    <input type="text" id="name" placeholder="Enter your name" required class="w-full px-5 py-4 rounded-xl bg-slate-900 border border-white/10 focus:border-purple-500 focus:outline-none transition">
+                </div>
+
+                <div>
+                    <label class="block mb-2 text-gray-300">
+                        Your Email
+                    </label>
+                    <input type="email" id="email" placeholder="Enter your email" required class="w-full px-5 py-4 rounded-xl bg-slate-900 border border-white/10 focus:border-purple-500 focus:outline-none transition">
+                </div>
+
+                <div>
+                    <label class="block mb-2 text-gray-300">
+                        Message
+                    </label>
+                    <textarea id="message" rows="5" placeholder="Write your message..." required class="w-full px-5 py-4 rounded-xl bg-slate-900 border border-white/10 focus:border-purple-500 focus:outline-none transition"></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-4 rounded-xl bg-linear-to-r from-purple-600 to-pink-500 font-semibold hover:scale-[1.02] hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="border-t border-white/10 bg-slate-950 py-8">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold">
+                Daksh<span class="text-pink-400">.</span>
+            </h2>
+
+            <p class="mt-2 text-gray-400">
+                Web Developer & Creative Coder
+            </p>
+
+            <!--Social Links-->
+            <div class="flex justify-center gap-6 mt-5">
+                <a href="#" class="text-gray-400 hover:text-blue-400 transition">
+                    GitHub
+                </a>
+
+                <a href="#" class="text-gray-400 hover:text-pink-400 transition">
+                    Instagram
+                </a>
+
+                <a href="#" class="text-gray-400 hover:text-blue-500 transition">
+                    LinkedIn
+                </a>
+            </div>
+
+            <p class="mt-6 text-sm text-gray-500">
+               © 2026 Daksh Khorwal. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!--JavaScript-->
+    <script src="./app.js"></script>
+
+</body>
+</html>
